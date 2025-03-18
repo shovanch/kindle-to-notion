@@ -30,5 +30,5 @@ const notion = new Notion();
   );
 
   // sync highlights (clippings) to notion
-  // await notion.syncHighlights(clippings);
+  await notion.syncHighlights(clippings);
 })();

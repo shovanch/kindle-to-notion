@@ -3,11 +3,8 @@ import { Clipping, GroupedClipping } from "../interfaces";
 import { writeToFile, readFromFile, formatAuthorName } from "../utils";
 
 export class Parser {
-  private fileName = "My Clippings_3.txt";
-  private regexNote =
-    /(.+) \((.+)\)\r*\n- (?:Seu destaque|Your Highlight|La subrayado|Your Note|Deine Markierung|\u60a8\u5728\u4f4d)(.+)\r*\n\r*\n(.+)/gm;
-  private regexHighlight =
-    /(.+) \((.+)\)\r*\n- (?:Seu destaque|Your Highlight)(.+)\r*\n\r*\n(.+)/gm;
+  // private fileName = "My Clippings_1.txt";
+  private fileName = "clips.txt";
   private splitter = /=+\r*\n/gm;
   private nonUtf8 = /\uFEFF/gmu;
   private clippings: Clipping[] = [];
