@@ -7,10 +7,6 @@ const notion = new Notion();
   // parse clippings
   const clippings = parser.processClippings();
 
-  console.log(clippings);
-
-  console.log("groupedClippings ->", JSON.stringify(clippings, null, 2));
-
   // Filter and log only the highlights with notes
   const highlightsWithNotes = clippings
     .map((group) => {

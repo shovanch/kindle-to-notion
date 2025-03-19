@@ -3,8 +3,8 @@ import { Clipping, GroupedClipping } from "../interfaces";
 import { writeToFile, readFromFile, formatAuthorName } from "../utils";
 
 export class Parser {
-  // private fileName = "My Clippings_1.txt";
-  private fileName = "clips.txt";
+  private fileName = "My Clippings_3.txt";
+  // private fileName = "clips.txt";
   private splitter = /=+\r*\n/gm;
   private nonUtf8 = /\uFEFF/gmu;
   private clippings: Clipping[] = [];
